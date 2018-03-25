@@ -22,7 +22,8 @@ import (
 	"github.com/palantir/pkg/cobracli"
 
 	"github.com/palantir/godel-okgo-asset-varcheck/generated_src"
-	"github.com/palantir/godel-okgo-asset-varcheck/varcheck"
+	"github.com/palantir/godel-okgo-asset-varcheck/varcheck/config"
+	"github.com/palantir/godel-okgo-asset-varcheck/varcheck/creator"
 )
 
 func main() {
@@ -32,6 +33,6 @@ func main() {
 func checkMain(osArgs []string) int {
 	os.Args = osArgs
 	var debugFlagVal bool
-	rootCmd := checker.AssetRootCmd(varcheck.Creator(), "run varcheck check")
+	rootCmd := checker.AssetRootCmd(creator.Varcheck(), config.UpgradeConfig, "run varcheck check")
 	return cobracli.ExecuteWithDefaultParamsWithVersion(rootCmd, &debugFlagVal, "")
 }

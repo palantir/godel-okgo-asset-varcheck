@@ -15,10 +15,6 @@
 package varcheck
 
 import (
-	"fmt"
-	"regexp"
-
-	"github.com/palantir/okgo/checker"
 	"github.com/palantir/okgo/okgo"
 )
 
@@ -26,23 +22,3 @@ const (
 	TypeName okgo.CheckerType     = "varcheck"
 	Priority okgo.CheckerPriority = 0
 )
-
-var lineRegexp = regexp.MustCompile(`.+: (.+):(\d+):(\d+): (.+)`)
-
-func Creator() checker.Creator {
-	return checker.NewCreator(
-		TypeName,
-		Priority,
-		func(cfgYML []byte) (okgo.Checker, error) {
-			return checker.NewAmalgomatedChecker(TypeName, checker.Priority(Priority), checker.LineParserWithWd(
-				func(line, wd string) okgo.Issue {
-					if match := lineRegexp.FindStringSubmatch(line); match != nil {
-						// varcheck prepends output with package name: remove it
-						line = fmt.Sprintf("%s:%s:%s: %s", match[1], match[2], match[3], match[4])
-					}
-					return okgo.NewIssueFromLine(line, wd)
-				},
-			)), nil
-		},
-	)
-}
