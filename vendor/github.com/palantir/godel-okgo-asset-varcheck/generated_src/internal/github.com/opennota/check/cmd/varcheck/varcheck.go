@@ -14,8 +14,8 @@
 package amalgomated
 
 import (
-	"fmt"
 	"github.com/palantir/godel-okgo-asset-varcheck/generated_src/internal/github.com/opennota/check/cmd/varcheck/amalgomated_flag"
+	"fmt"
 	"go/ast"
 	"go/build"
 	"go/token"
@@ -31,21 +31,21 @@ import (
 )
 
 var (
-	reportExported = flag.Bool("e", false, "Report exported variables and constants")
-	buildTags      = flag.String("tags", "", "Build tags")
+	reportExported	= flag.Bool("e", false, "Report exported variables and constants")
+	buildTags	= flag.String("tags", "", "Build tags")
 )
 
 type object struct {
-	pkgPath string
-	name    string
+	pkgPath	string
+	name	string
 }
 
 type visitor struct {
-	prog       *loader.Program
-	pkg        *loader.PackageInfo
-	uses       map[object]int
-	positions  map[object]token.Position
-	insideFunc bool
+	prog		*loader.Program
+	pkg		*loader.PackageInfo
+	uses		map[object]int
+	positions	map[object]token.Position
+	insideFunc	bool
 }
 
 func getKey(obj types.Object) object {
@@ -60,8 +60,8 @@ func getKey(obj types.Object) object {
 	}
 
 	return object{
-		pkgPath: pkgPath,
-		name:    obj.Name(),
+		pkgPath:	pkgPath,
+		name:		obj.Name(),
 	}
 }
 
@@ -166,10 +166,10 @@ func AmalgomatedMain() {
 		}
 
 		v := &visitor{
-			prog:      program,
-			pkg:       pkgInfo,
-			uses:      uses,
-			positions: positions,
+			prog:		program,
+			pkg:		pkgInfo,
+			uses:		uses,
+			positions:	positions,
 		}
 
 		for _, f := range v.pkg.Files {
