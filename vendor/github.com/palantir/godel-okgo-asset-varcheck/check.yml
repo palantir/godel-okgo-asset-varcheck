@@ -1,0 +1,3 @@
+packages:
+  varcheck:
+    main: github.com/opennota/check/cmd/varcheck
