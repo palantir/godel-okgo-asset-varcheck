@@ -26,10 +26,6 @@ import (
 
 var lineRegexp = regexp.MustCompile(`.+: (.+):(\d+):(\d+): (.+)`)
 
-func init() {
-	checker.SetGoBuildDefaultReleaseTags()
-}
-
 func Varcheck() checker.Creator {
 	return checker.NewCreator(
 		varcheck.TypeName,
