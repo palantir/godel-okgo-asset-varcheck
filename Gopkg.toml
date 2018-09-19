@@ -32,7 +32,7 @@ required = ["github.com/opennota/check/cmd/varcheck"]
 
 [[constraint]]
   name = "github.com/palantir/okgo"
-  version = "1.2.0"
+  version = "1.0.0"
 
 [[constraint]]
   branch = "master"
