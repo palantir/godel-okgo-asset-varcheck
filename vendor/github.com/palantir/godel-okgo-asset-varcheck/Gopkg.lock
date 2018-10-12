@@ -126,21 +126,6 @@
   revision = "6ef6fc2811e260af0641aae25a45881217b3cf3d"
 
 [[projects]]
-  name = "github.com/palantir/godel-okgo-asset-varcheck"
-  packages = [
-    "generated_src",
-    "generated_src/internal/github.com/opennota/check/cmd/varcheck",
-    "generated_src/internal/github.com/opennota/check/cmd/varcheck/amalgomated_flag",
-    "varcheck",
-    "varcheck/config",
-    "varcheck/config/internal/legacy",
-    "varcheck/config/internal/v0",
-    "varcheck/creator",
-  ]
-  revision = "12283ed2642bff2b419ce4936e645c38cfa459da"
-  version = "v1.1.0"
-
-[[projects]]
   name = "github.com/palantir/okgo"
   packages = [
     "checker",
@@ -242,6 +227,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "a4767de9b3b1dc0739548212b4e71662445daa381649e119b6915315d6fd1b77"
+  inputs-digest = "98f65ff15e40f3c06aa555c8bf62851fbfe136f72834e0749756f912a54b238d"
   solver-name = "gps-cdcl"
   solver-version = 1
