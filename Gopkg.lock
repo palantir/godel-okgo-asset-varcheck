@@ -57,17 +57,6 @@
   revision = "ae77be60afb1dcacde03767a8c37337fad28ac14"
 
 [[projects]]
-  digest = "1:15ec2166e33ef6c60b344a04d050eec79193517e7f5082b6233b2d09ef0d10b8"
-  name = "github.com/kisielk/gotool"
-  packages = [
-    ".",
-    "internal/load",
-  ]
-  pruneopts = "UT"
-  revision = "80517062f582ea3340cd4baf70e86d539ae7d84d"
-  version = "v1.0.0"
-
-[[projects]]
   digest = "1:e2d1d410fb367567c2b53ed9e2d719d3c1f0891397bb2fa49afd747cfbf1e8e4"
   name = "github.com/mattn/go-runewidth"
   packages = ["."]
@@ -105,11 +94,11 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:b1e19a99f04136b524ce86f0e4d8b2deddb276773b0fb483548a041fb30912bd"
+  digest = "1:8674b259df1c77dfb3b50f2a9f09dc0afd7fb5e830c5f2f41b64087922f47fe0"
   name = "github.com/opennota/check"
   packages = ["cmd/varcheck"]
   pruneopts = "UT"
-  revision = "86da7ade2cccfc1c5d6beeb55e5c65eba54f5f3c"
+  revision = "0c771f5545ff495a81aad2916c3f16add0cd3b55"
 
 [[projects]]
   digest = "1:bc8295d1ac914cecf3ba574f9884149e1517b2ec356775b88cd3c72e299cfeb8"
@@ -252,15 +241,22 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:3bb904aa43844ed7773faff747e121d8ff37c32c552f8c88f107160831d32f59"
+  digest = "1:26ff448d9de287b0771f34723a661777832bf4f0f77784279016fecca44f8be1"
   name = "golang.org/x/tools"
   packages = [
     "go/ast/astutil",
-    "go/buildutil",
-    "go/loader",
+    "go/gcexportdata",
+    "go/internal/cgo",
+    "go/internal/gcimporter",
+    "go/internal/packagesdriver",
+    "go/packages",
+    "go/types/typeutil",
+    "internal/fastwalk",
+    "internal/gopathwalk",
+    "internal/semver",
   ]
   pruneopts = "UT"
-  revision = "059bec968c61383b574810040ba9410712de36c5"
+  revision = "d30e00c240341e9e2a2d9519c67bd95fde906c7b"
 
 [[projects]]
   digest = "1:c4b907986044810b1542df64faf968e8b1c235113f26b06f16a1c86e0d6a48f8"
@@ -282,7 +278,6 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
-    "github.com/kisielk/gotool",
     "github.com/nmiyake/pkg/gofiles",
     "github.com/opennota/check/cmd/varcheck",
     "github.com/palantir/amalgomate/amalgomated",
@@ -295,7 +290,7 @@
     "github.com/palantir/pkg/cobracli",
     "github.com/pkg/errors",
     "github.com/stretchr/testify/require",
-    "golang.org/x/tools/go/loader",
+    "golang.org/x/tools/go/packages",
     "gopkg.in/yaml.v2",
   ]
   solver-name = "gps-cdcl"
