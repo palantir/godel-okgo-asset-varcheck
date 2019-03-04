@@ -22,10 +22,11 @@ workflows:
   version: 2
   verify-test-dist-publish:
     jobs:
-#      - godel/verify:
-#          name: verify
-#          <<: *executor
-#          <<: *all-tags-filter
+      - godel/verify:
+          name: verify
+          <<: *executor
+          <<: *all-tags-filter
+          mod-cache: false
       - godel/test:
           name: test
           <<: *executor
@@ -41,7 +42,7 @@ workflows:
           bintray-repo: releases
           bintray-product: godel-okgo-asset-varcheck
           requires:
-#            - verify
+            - verify
             - test
             - dist
           filters:
