@@ -143,6 +143,23 @@
   revision = "6ef6fc2811e260af0641aae25a45881217b3cf3d"
 
 [[projects]]
+  digest = "1:c4e4e03956c430bee6e51b24790ea6b4db0aaf0e34b375f6727b561bc6a2cce3"
+  name = "github.com/palantir/godel-okgo-asset-varcheck"
+  packages = [
+    "generated_src",
+    "generated_src/internal/github.com/opennota/check/cmd/varcheck",
+    "generated_src/internal/github.com/opennota/check/cmd/varcheck/amalgomated_flag",
+    "varcheck",
+    "varcheck/config",
+    "varcheck/config/internal/legacy",
+    "varcheck/config/internal/v0",
+    "varcheck/creator",
+  ]
+  pruneopts = "UT"
+  revision = "31d452c641e5b1adc8d9ccea74e28580450be9e9"
+  version = "v1.3.0"
+
+[[projects]]
   digest = "1:0b29cbfa2693c66eb778625dfcf20abbedd10b14d6f4600414405ab98ee7dcac"
   name = "github.com/palantir/okgo"
   packages = [
@@ -281,6 +298,14 @@
     "github.com/nmiyake/pkg/gofiles",
     "github.com/opennota/check/cmd/varcheck",
     "github.com/palantir/amalgomate/amalgomated",
+    "github.com/palantir/godel-okgo-asset-varcheck/generated_src",
+    "github.com/palantir/godel-okgo-asset-varcheck/generated_src/internal/github.com/opennota/check/cmd/varcheck",
+    "github.com/palantir/godel-okgo-asset-varcheck/generated_src/internal/github.com/opennota/check/cmd/varcheck/amalgomated_flag",
+    "github.com/palantir/godel-okgo-asset-varcheck/varcheck",
+    "github.com/palantir/godel-okgo-asset-varcheck/varcheck/config",
+    "github.com/palantir/godel-okgo-asset-varcheck/varcheck/config/internal/legacy",
+    "github.com/palantir/godel-okgo-asset-varcheck/varcheck/config/internal/v0",
+    "github.com/palantir/godel-okgo-asset-varcheck/varcheck/creator",
     "github.com/palantir/godel/framework/pluginapitester",
     "github.com/palantir/godel/pkg/products/v2/products",
     "github.com/palantir/godel/pkg/versionedconfig",
