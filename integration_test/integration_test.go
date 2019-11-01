@@ -59,6 +59,10 @@ func TestCheck(t *testing.T) {
 				Name: "unexported variable",
 				Specs: []gofiles.GoFileSpec{
 					{
+						RelPath: "go.mod",
+						Src:     "module foo",
+					},
+					{
 						RelPath: "foo.go",
 						Src: `package foo
 
@@ -77,6 +81,10 @@ Check(s) produced output: [varcheck]
 			{
 				Name: "unexported variable in file from inner directory",
 				Specs: []gofiles.GoFileSpec{
+					{
+						RelPath: "go.mod",
+						Src:     "module foo",
+					},
 					{
 						RelPath: "foo.go",
 						Src: `package foo
