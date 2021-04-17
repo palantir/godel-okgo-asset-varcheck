@@ -128,6 +128,7 @@ github.com/ulikunitz/xz/internal/xlog
 github.com/ulikunitz/xz/lzma
 # gitlab.com/opennota/check v0.0.0-20181224073239-ccaba434e62a
 ## explicit
+gitlab.com/opennota/check
 gitlab.com/opennota/check/cmd/varcheck
 # golang.org/x/mod v0.3.0
 golang.org/x/mod/semver
