@@ -1,0 +1,5 @@
+type: improvement
+improvement:
+  description: Update dependency to use gitlab.com/opennota/check/cmd/varcheck v0.0.0-20181224073239-ccaba434e62a
+  links:
+  - https://github.com/palantir/godel-okgo-asset-varcheck/pull/80

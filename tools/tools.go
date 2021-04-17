@@ -17,5 +17,5 @@
 package tools
 
 import (
-	_ "github.com/opennota/check/cmd/varcheck"
+	_ "gitlab.com/opennota/check/cmd/varcheck"
 )

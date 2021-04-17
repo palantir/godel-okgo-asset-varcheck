@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"sort"
 
-	varcheck "github.com/palantir/godel-okgo-asset-varcheck/generated_src/internal/github.com/opennota/check/cmd/varcheck"
+	varcheck "github.com/palantir/godel-okgo-asset-varcheck/generated_src/internal/gitlab.com/opennota/check/cmd/varcheck"
 )
 
 var programs = map[string]func(){"varcheck": func() {
