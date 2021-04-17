@@ -14,7 +14,7 @@
 package amalgomated
 
 import (
-	"github.com/palantir/godel-okgo-asset-varcheck/generated_src/internal/gitlab.com/opennota/check/cmd/varcheck/amalgomated_flag"
+	"github.com/palantir/godel-okgo-asset-varcheck/generated_src/internal/amalgomated_flag"
 	"fmt"
 	"go/ast"
 	"go/token"
