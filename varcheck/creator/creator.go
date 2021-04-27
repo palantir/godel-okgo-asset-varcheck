@@ -18,10 +18,9 @@ import (
 	"fmt"
 	"regexp"
 
+	"github.com/palantir/godel-okgo-asset-varcheck/varcheck"
 	"github.com/palantir/okgo/checker"
 	"github.com/palantir/okgo/okgo"
-
-	"github.com/palantir/godel-okgo-asset-varcheck/varcheck"
 )
 
 var lineRegexp = regexp.MustCompile(`.+: (.+):(\d+):(\d+): (.+)`)
