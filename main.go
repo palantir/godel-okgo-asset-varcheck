@@ -18,12 +18,11 @@ import (
 	"os"
 
 	"github.com/palantir/amalgomate/amalgomated"
-	"github.com/palantir/okgo/checker"
-	"github.com/palantir/pkg/cobracli"
-
 	amalgomatedcheck "github.com/palantir/godel-okgo-asset-varcheck/generated_src"
 	"github.com/palantir/godel-okgo-asset-varcheck/varcheck/config"
 	"github.com/palantir/godel-okgo-asset-varcheck/varcheck/creator"
+	"github.com/palantir/okgo/checker"
+	"github.com/palantir/pkg/cobracli"
 )
 
 func main() {
