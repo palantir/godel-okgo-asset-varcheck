@@ -9,7 +9,7 @@ require (
 	github.com/palantir/okgo v1.8.0
 	github.com/palantir/pkg/cobracli v1.1.0
 	github.com/pkg/errors v0.8.1
-	github.com/stretchr/testify v1.7.5
+	github.com/stretchr/testify v1.8.0
 	github.com/ulikunitz/xz v0.5.10 // indirect
 	gitlab.com/opennota/check v0.0.0-20181224073239-ccaba434e62a
 	golang.org/x/tools v0.1.11-0.20220531141438-2bb78cf04ecd
