@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/nmiyake/pkg/gofiles v1.2.0
 	github.com/palantir/amalgomate v1.5.0
-	github.com/palantir/godel/v2 v2.59.0
+	github.com/palantir/godel/v2 v2.60.0
 	github.com/palantir/okgo v1.8.0
 	github.com/palantir/pkg/cobracli v1.1.0
 	github.com/pkg/errors v0.8.1
@@ -47,7 +47,7 @@ require (
 	github.com/pierrec/lz4 v2.0.5+incompatible // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/rogpeppe/go-internal v1.7.0 // indirect
-	github.com/spf13/cobra v1.4.0 // indirect
+	github.com/spf13/cobra v1.5.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/termie/go-shutil v0.0.0-20140729215957-bcacb06fecae // indirect
 	github.com/xi2/xz v0.0.0-20171230120015-48954b6210f8 // indirect
