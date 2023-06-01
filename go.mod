@@ -12,7 +12,7 @@ require (
 	github.com/stretchr/testify v1.8.4
 	github.com/ulikunitz/xz v0.5.10 // indirect
 	gitlab.com/opennota/check v0.0.0-20181224073239-ccaba434e62a
-	golang.org/x/tools v0.9.2
+	golang.org/x/tools v0.9.3
 	gopkg.in/yaml.v2 v2.4.0
 )
 
