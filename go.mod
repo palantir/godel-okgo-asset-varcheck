@@ -5,14 +5,14 @@ go 1.21
 require (
 	github.com/nmiyake/pkg/gofiles v1.2.0
 	github.com/palantir/amalgomate v1.35.0
-	github.com/palantir/godel/v2 v2.95.0
+	github.com/palantir/godel/v2 v2.96.0
 	github.com/palantir/okgo v1.42.0
 	github.com/palantir/pkg/cobracli v1.2.0
 	github.com/pkg/errors v0.9.1
 	github.com/stretchr/testify v1.8.4
 	github.com/ulikunitz/xz v0.5.10 // indirect
 	gitlab.com/opennota/check v0.0.0-20181224073239-ccaba434e62a
-	golang.org/x/tools v0.16.0
+	golang.org/x/tools v0.16.1
 	gopkg.in/yaml.v2 v2.4.0
 )
 
