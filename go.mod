@@ -12,7 +12,7 @@ require (
 	github.com/stretchr/testify v1.10.0
 	github.com/ulikunitz/xz v0.5.10 // indirect
 	gitlab.com/opennota/check v0.0.0-20181224073239-ccaba434e62a
-	golang.org/x/tools v0.28.0
+	golang.org/x/tools v0.29.0
 	gopkg.in/yaml.v2 v2.4.0
 )
 
@@ -46,6 +46,6 @@ require (
 	github.com/xi2/xz v0.0.0-20171230120015-48954b6210f8 // indirect
 	golang.org/x/mod v0.22.0 // indirect
 	golang.org/x/sync v0.10.0 // indirect
-	golang.org/x/sys v0.28.0 // indirect
+	golang.org/x/sys v0.29.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
