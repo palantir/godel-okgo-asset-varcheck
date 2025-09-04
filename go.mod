@@ -5,7 +5,7 @@ go 1.25.0
 require (
 	github.com/nmiyake/pkg/gofiles v1.2.0
 	github.com/palantir/amalgomate v1.52.0
-	github.com/palantir/godel/v2 v2.137.0
+	github.com/palantir/godel/v2 v2.138.0
 	github.com/palantir/okgo v1.64.0
 	github.com/palantir/pkg/cobracli v1.3.0
 	github.com/pkg/errors v0.9.1
@@ -38,7 +38,7 @@ require (
 	github.com/palantir/pkg v1.1.0 // indirect
 	github.com/palantir/pkg/matcher v1.3.0 // indirect
 	github.com/palantir/pkg/pkgpath v1.4.0 // indirect
-	github.com/palantir/pkg/specdir v1.2.0 // indirect
+	github.com/palantir/pkg/specdir v1.3.0 // indirect
 	github.com/pierrec/lz4/v4 v4.1.22 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/rivo/uniseg v0.4.7 // indirect
