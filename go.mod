@@ -12,7 +12,7 @@ require (
 	github.com/palantir/pkg/cobracli v1.3.0
 	github.com/pkg/errors v0.9.1
 	github.com/stretchr/testify v1.11.1
-	github.com/ulikunitz/xz v0.5.15 // indirect
+	github.com/ulikunitz/xz v0.5.16 // indirect
 	gitlab.com/opennota/check v0.0.0-20181224073239-ccaba434e62a
 	golang.org/x/tools v0.48.0
 	gopkg.in/yaml.v2 v2.4.0
